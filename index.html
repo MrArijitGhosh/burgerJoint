@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <a href="#" id="toggleOrderView"><span class="section1">See All orders</span><span class="section2">Place Order</span></a>
+            <section class="section1">
+                <h2>Order</h2>
+                <form name="order">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" required="required" maxlength="10" />
+                    </div>
+
+                    <div>
+                        <label>Bun</label>
+                        <input type="text" name="bun" disabled="disabled" value="2" />
+                    </div>
+
+                    <div>
+                        <label>Salad</label>
+                        <span>Yes</span><input type="radio" name="salad" value="Y" required="required" /> &nbsp;&nbsp;
+                        <span>No</span><input type="radio" name="salad" value="N" required="required" />
+                    </div>
+
+                    <div>
+                        <label>Cheese Slice</label>
+                        <input type="number" name="cheeseSlice" min="0" required="required" />
+                    </div>
+
+                    <div>
+                        <label>Cutlets</label>
+                        <input type="number" name="cutlet" min="0" required="required" />
+                    </div>
+
+                    <div>
+                        <p><span>Price : </span><span id="totalPrice"></span></p>
+                    </div>
+                    <span class="error">Please fill all details!</span><br/>
+                    <button type="submit" name="submit" id="OrderNow" form="order">Order</button>
+                </form>
+            </section>
+
+            <section class="section2">
+                <h2>All orders</h2>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="" id="searchName" />
+                    </div>
+
+                    <div>
+                        <!-- Not using Table -->
+                        <ul class="firstLevel">
+                            <li id="placeHolder1">
+                                <ul class="name">
+                                    <li>Name</li>
+                                </ul>
+                            </li>
+
+                            <li  id="placeHolder2">
+                                <ul class="salad">
+                                    <li>Salad</li>
+                                </ul>
+                            </li>
+
+                            <li id="placeHolder3">
+                                <ul class="cheeseSlice">
+                                    <li>Number of Cheese Slices</li>
+                                </ul>
+                            </li>
+
+                            <li id="placeHolder4">
+                                <ul class="cutlet">
+                                    <li>Number of Cutlets</li>
+                                </ul>
+                            </li>
+
+                            <li id="placeHolder5">
+                                <ul class="grandTotal">
+                                    <li>Total</li>
+                                </ul>
+                            </li>
+
+                            <li id="placeHolder6">
+                                <ul class="key">
+                                    <li>Order ID</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

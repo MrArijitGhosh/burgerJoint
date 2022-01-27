@@ -1,0 +1,21 @@
+body{display: none;}
+
+label {display:inline-block; min-width: 100px;}
+
+form > div {display: block; padding:10px 0;}
+
+section {color: #1599aa; width: 25%; margin: 0 auto; min-width: 300px; background-color: beige; padding: 1.5%; border-radius: 5%;}
+
+h2{text-align: center;}
+
+button {border-radius: 4px; background-color: #1599aa; min-width: 80px; width: 30%; color: bisque;}
+
+.error {color: red;}
+
+ul {    list-style-type: none; padding: 0;}
+ul.firstLevel > li{    display: table-cell; width: 15%; min-width: 100px;}
+ul ul {padding: 5px;}
+ul ul li {padding: 5px 0;     min-height: 30px;}
+ul ul li:first-child {padding-bottom: 0px;min-height: 65px; font-weight: bold; text-decoration: underline;}
+
+.section2 {width: 40%;}
